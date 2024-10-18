@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PAMCalculator.Views.CalculatorView"
+             Title="Calculadora de Dois Termos">
+  
+    
+    <VerticalStackLayout Spacing="25">
+
+        <HorizontalStackLayout>
+        <Label Text="Primeiro Termo:"/>
+        <Entry
+            Text="{Binding PrimeiroTermo}"
+            Placeholder="Primeiro Termo"
+            Keyboard="Numeric"
+            WidthRequest="250"      
+        />
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout>
+        <Label Text="Segundo Termo:"/>
+        <Entry
+            Text="{Binding SegundoTermo}"
+            Placeholder="Segundo Termo"
+            Keyboard="Numeric"
+            WidthRequest="250"
+
+        />
+        </HorizontalStackLayout>
+        
+        <HorizontalStackLayout>
+        <Label Text="Resultado:"/>
+        <Entry 
+            Text="{Binding Resultado}"
+            Placeholder="Resultado" 
+            Keyboard="Numeric"
+            WidthRequest="250"
+        />
+        </HorizontalStackLayout>
+        
+        <Button
+            Text="Somar"
+            Command="{Binding SomarCommand}" 
+            WidthRequest="250"
+
+         />
+
+        <Button
+            Text="Subtrair"
+            Command="{Binding SubtrairCommand}"
+            WidthRequest="250"
+         />
+
+        <Button
+           Text="Multiplicar"
+           Command="{Binding MultiplicarCommand}"
+            WidthRequest="250"
+        />
+
+        <Button
+           Text="Dividir"
+           Command="{Binding DividirCommand}"
+            WidthRequest="250"
+        />
+
+        <Button
+           Text="Elevar"
+           Command="{Binding ElevarCommand}"
+            WidthRequest="250"
+        />
+
+        <Button
+           Text="Raiz"
+           Command="{Binding RaizCommand}"
+            WidthRequest="250"
+        />
+        
+
+
+    </VerticalStackLayout>
+</ContentPage>
